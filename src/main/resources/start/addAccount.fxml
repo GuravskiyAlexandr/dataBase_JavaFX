@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.TreeView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.112" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.fx.adminTable.AddUserAccountController">
+   <children>
+      <Pane prefHeight="303.0" prefWidth="303.0">
+         <children>
+            <Label fx:id="createAccount" layoutX="81.0" layoutY="6.0" prefHeight="35.0" prefWidth="118.0">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <TextField fx:id="login" layoutX="140.0" layoutY="70.0" />
+            <TextField fx:id="password" layoutX="140.0" layoutY="119.0" />
+            <TextField fx:id="rale" editable="false" layoutX="140.0" layoutY="167.0" onMouseClicked="#treeViewShow" />
+            <Label layoutX="20.0" layoutY="74.0" prefHeight="17.0" prefWidth="77.0" text="Login">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="20.0" layoutY="123.0" prefHeight="17.0" prefWidth="77.0" text="Password">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="20.0" layoutY="171.0" prefHeight="17.0" prefWidth="77.0" text="Rale">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Button fx:id="doneId" layoutX="14.0" layoutY="213.0" mnemonicParsing="false" onAction="#done" prefHeight="35.0" prefWidth="77.0" text="Done">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Button>
+            <TreeView fx:id="treeView" layoutX="139.0" layoutY="193.0" prefHeight="49.0" prefWidth="149.0" showRoot="false" />
+            <Label fx:id="updateAccount" layoutX="66.0" layoutY="15.0" prefHeight="17.0" prefWidth="212.0">
+               <font>
+                  <Font size="18.0" />
+               </font></Label>
+            <Label fx:id="exceptionId" layoutX="25.0" layoutY="264.0" prefHeight="25.0" prefWidth="254.0" textFill="#e10e0e">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

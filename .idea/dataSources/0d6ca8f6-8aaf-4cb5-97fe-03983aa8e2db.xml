@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="my_test@localhost">
+  <database-model serializer="dbm" rdbms="MYSQL" format-version="4.2">
+    <root id="1"/>
+    <schema id="2" parent="1" name="my_test">
+      <Current>1</Current>
+      <Visible>1</Visible>
+    </schema>
+    <schema id="3" parent="1" name="information_schema"/>
+    <schema id="4" parent="1" name="mysql"/>
+    <schema id="5" parent="1" name="my_db"/>
+    <schema id="6" parent="1" name="performance_schema"/>
+    <schema id="7" parent="1" name="sakila"/>
+    <schema id="8" parent="1" name="sys"/>
+    <schema id="9" parent="1" name="world"/>
+    <table id="10" parent="2" name="animal"/>
+    <table id="11" parent="2" name="my_first_tables"/>
+    <table id="12" parent="2" name="students_sequence"/>
+    <table id="13" parent="2" name="user"/>
+    <column id="14" parent="10" name="id">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="15" parent="10" name="anim_name">
+      <Position>2</Position>
+      <DataType>varchar(85)|0</DataType>
+    </column>
+    <column id="16" parent="10" name="anim_desk">
+      <Position>3</Position>
+      <DataType>varchar(85)|0</DataType>
+    </column>
+    <index id="17" parent="10" name="id_UNIQUE">
+      <ColNames>id</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="18" parent="10" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <key id="19" parent="10" name="id_UNIQUE">
+      <ColNames>id</ColNames>
+      <UnderlyingIndexName>id_UNIQUE</UnderlyingIndexName>
+    </key>
+    <column id="20" parent="11" name="id">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="21" parent="11" name="name">
+      <Position>2</Position>
+      <DataType>varchar(45)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="22" parent="11" name="age">
+      <Position>3</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="23" parent="11" name="email">
+      <Position>4</Position>
+      <DataType>varchar(65)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <key id="24" parent="11" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="25" parent="12" name="ID">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="26" parent="12" name="FIRST_NAME">
+      <Position>2</Position>
+      <DataType>varchar(45)|0</DataType>
+    </column>
+    <column id="27" parent="12" name="LAST_NAME">
+      <Position>3</Position>
+      <DataType>varchar(45)|0</DataType>
+    </column>
+    <column id="28" parent="12" name="MIDDLE_NAME">
+      <Position>4</Position>
+      <DataType>varchar(45)|0</DataType>
+    </column>
+    <column id="29" parent="12" name="RATING">
+      <Position>5</Position>
+      <DataType>varchar(45)|0</DataType>
+    </column>
+    <key id="30" parent="12" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>ID</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="31" parent="13" name="id">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+    </column>
+    <column id="32" parent="13" name="name">
+      <Position>2</Position>
+      <DataType>varchar(40)|0</DataType>
+    </column>
+    <column id="33" parent="13" name="password">
+      <Position>3</Position>
+      <DataType>varchar(40)|0</DataType>
+    </column>
+  </database-model>
+</dataSource>

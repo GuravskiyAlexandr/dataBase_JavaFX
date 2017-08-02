@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.TreeView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="498.0" prefWidth="364.0" xmlns="http://javafx.com/javafx/8.0.112" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.fx.adminTable.AddEmployeeController">
+   <children>
+      <Label layoutX="113.0" layoutY="20.0" prefHeight="27.0" prefWidth="114.0" text="Create staff">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="nameAdd" layoutX="171.0" layoutY="92.0" promptText="Name" />
+      <TextField fx:id="surnameAdd" layoutX="171.0" layoutY="144.0" promptText="Surname" />
+      <Label layoutX="32.0" layoutY="91.0" prefHeight="0.0" prefWidth="48.0" text="Name">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="32.0" layoutY="148.0" text="Surname">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+      <Label layoutX="25.0" layoutY="248.0" text="Position">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+      <Label layoutX="36.0" layoutY="202.0" prefHeight="27.0" prefWidth="41.0" text="Age">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+      <TextField fx:id="ageAdd" layoutX="170.0" layoutY="203.0" prefHeight="25.0" prefWidth="47.0" promptText="Age" />
+      <Button fx:id="saveId" layoutX="289.0" layoutY="392.0" mnemonicParsing="false" onAction="#checkSave" text="Save">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Label fx:id="labelException" layoutX="4.0" layoutY="361.0" prefHeight="17.0" prefWidth="349.0" textFill="#ff0d0d">
+         <font>
+            <Font size="19.0" />
+         </font></Label>
+      <TreeView fx:id="treeView" layoutX="170.0" layoutY="275.0"  opacity="0.0" prefHeight="89.0" prefWidth="149.0" showRoot="false" style="-fx-background-size: 30;">
+
+      </TreeView>
+      <TextField fx:id="positionAdd" editable="false" layoutX="170.0" layoutY="249.0" onMouseClicked="#treeViewShow" promptText="Position" />
+   </children>
+</Pane>
